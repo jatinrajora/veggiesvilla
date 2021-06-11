@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/orderDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#38BD2F"
+        android:elevation="4dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderDetailToolbar"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/txtOrderItemsDescription"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Items:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtOrderDetailsItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomato"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txtOrderItemsDescription" />
+
+        <TextView
+            android:id="@+id/txtOrderDateDescription"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Order date:"
+            android:textStyle="bold"
+            android:layout_below="@id/txtOrderDetailsItems"/>
+
+        <TextView
+            android:id="@+id/txtOrderDetailsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22/05/2021 11:52:36"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/txtOrderDetailsItems"
+            android:layout_toEndOf="@id/txtOrderDateDescription" />
+
+        <TextView
+            android:id="@+id/txtOrderDetailsAddressDescription"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtOrderDateDescription"/>
+
+        <TextView
+            android:id="@+id/txtOrderDetailsAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#11871, Street no. 3, Sanguana Basti, Bathinda"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/txtOrderDetailsAddressDescription"
+            android:layout_below="@id/txtOrderDetailsDate"/>
+
+        <TextView
+            android:id="@+id/txtOrderDetailsDeliveryDescription"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Delivery Status:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtOrderDetailsAddress"/>
+
+        <TextView
+            android:id="@+id/txtOrderDetailsDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/txtOrderDetailsDeliveryDescription"
+            android:layout_below="@id/txtOrderDetailsAddress"/>
+
+        <TextView
+            android:id="@+id/txtOrderDetailsPaymentModeDescription"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Payment Mode:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtOrderDetailsDeliveryDescription"/>
+
+        <TextView
+            android:id="@+id/txtOrderDetailsPaymentMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COD"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/txtOrderDetailsPaymentModeDescription"
+            android:layout_below="@id/txtOrderDetailsDelivery"/>
+
+        <TextView
+            android:id="@+id/txtOrderDetailsPaymentStatusDescription"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Payment Status:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtOrderDetailsPaymentModeDescription"/>
+
+        <TextView
+            android:id="@+id/txtOrderDetailsPaymentStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/txtOrderDetailsPaymentStatusDescription"
+            android:layout_below="@id/txtOrderDetailsPaymentMode"/>
+
+        <TextView
+            android:id="@+id/txtOrderDetailsTotalPriceDescription"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Total Price:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtOrderDetailsPaymentStatusDescription"/>
+
+        <TextView
+            android:id="@+id/txtOrderDetailsTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120.0"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/txtOrderDetailsTotalPriceDescription"
+            android:layout_below="@id/txtOrderDetailsPaymentStatus"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

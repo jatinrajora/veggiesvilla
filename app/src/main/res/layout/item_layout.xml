@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPadding="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtItemName"
+            android:layout_width="105dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Item Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            card_view:layout_constraintStart_toEndOf="@+id/imgItem"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgItem"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:text="Add"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/txtItemName"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            card_view:layout_constraintEnd_toEndOf="@+id/btnAdd"
+            card_view:layout_constraintStart_toEndOf="@+id/txtQty"
+            card_view:layout_constraintTop_toBottomOf="@+id/btnAdd"
+            card_view:srcCompat="@drawable/app_button_add" />
+
+        <ImageView
+            android:id="@+id/imgSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            card_view:layout_constraintEnd_toStartOf="@+id/txtQty"
+            card_view:layout_constraintStart_toStartOf="@+id/btnAdd"
+            card_view:layout_constraintTop_toBottomOf="@+id/btnAdd"
+            card_view:srcCompat="@drawable/app_button_sub" />
+
+        <TextView
+            android:id="@+id/txtQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="9dp"
+            android:text="1"
+            card_view:layout_constraintEnd_toStartOf="@+id/imgAdd"
+            card_view:layout_constraintStart_toEndOf="@+id/imgSub"
+            card_view:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+        <TextView
+            android:id="@+id/txtMrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:text="30"
+            card_view:layout_constraintStart_toEndOf="@+id/imgItem"
+            card_view:layout_constraintTop_toBottomOf="@+id/txtItemName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="/- 1Kg"
+            card_view:layout_constraintStart_toEndOf="@+id/txtMrp"
+            card_view:layout_constraintTop_toBottomOf="@+id/txtItemName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

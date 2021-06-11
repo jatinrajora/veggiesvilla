@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#38BD2F"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtSName"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+
+    <EditText
+        android:id="@+id/edtSEmail"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Your Email Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/edtSPhone"
+        app:layout_constraintStart_toStartOf="@+id/edtSPhone"
+        app:layout_constraintTop_toBottomOf="@+id/edtSPhone" />
+
+    <EditText
+        android:id="@+id/edtSAddress"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Your Postal Address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="@+id/edtSEmail"
+        app:layout_constraintStart_toStartOf="@+id/edtSEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtSEmail" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Sign Up Information"
+        android:textColor="#38BD2F"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+
+    <EditText
+        android:id="@+id/edtSPhone"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Your Phone Number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/edtSName"
+        app:layout_constraintStart_toStartOf="@+id/edtSName"
+        app:layout_constraintTop_toBottomOf="@+id/edtSName" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#38BD2F"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="@+id/edtSAddress"
+        app:layout_constraintStart_toStartOf="@+id/edtSAddress"
+        app:layout_constraintTop_toBottomOf="@+id/edtSAddress" />
+</androidx.constraintlayout.widget.ConstraintLayout>

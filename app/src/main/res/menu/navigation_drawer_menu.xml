@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Orders"
+        android:id="@+id/orders"
+        android:icon="@drawable/app_orders"/>
+
+    <item
+        android:title="About us"
+        android:id="@+id/about"
+        android:icon="@drawable/app_about"/>
+
+    <item
+        android:title="Terms"
+        android:id="@+id/terms"
+        android:icon="@drawable/app_terms"/>
+
+    <item
+        android:title="Log Out"
+        android:id="@+id/logOut"
+        android:icon="@drawable/app_logout"/>
+
+    <item
+        android:title="Developer"
+        android:id="@+id/developer"
+        android:icon="@drawable/app_developer"/>
+
+</menu>
